@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&family=Karla:wght@800&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section class="top-container">
+            <h1>Generate a <span class="title-decoration">random password</span></h1>
+            <p>Never use an insecure password again</p> 
+            <form>
+                <div class="btn-menu">
+                    <label for="quantity">Choose your password length (between 4 and 15):</label>
+                    <input type="number" id="quantity" name="quantity" min="4" max="15" value="8">
+                </div>
+                <div>
+                    <input type="submit" id="generate-btn" class="btn-icon" value="⚡︎ Generate password">
+                </div>
+            </form>
+        </section>
+        <section class="bottom-container">
+            <p class="password-container-text">Click on the password to copy to clipboard.</p>
+            <p class="password-box" id="password-box1">...</p>
+            <p class="password-box" id="password-box2">...</p>
+            <p class="password-box" id="password-box3">...</p>
+            <p class="password-box" id="password-box4">...</p>
+            <p class="password-container-text popup" id="popup">Copied! 📋</p>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
